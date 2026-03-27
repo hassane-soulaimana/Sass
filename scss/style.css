@@ -1,0 +1,476 @@
+header {
+  background-color: white;
+  color: #1a1a1a;
+  padding: 15px 0;
+  border-bottom: 1px solid #eeeeee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+header .header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-container img {
+  height: 40px;
+  width: auto;
+  margin-right: 20px;
+}
+header .header-container h1 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+  flex: 1;
+  text-transform: uppercase;
+}
+header .header-container nav {
+  display: flex;
+  gap: 30px;
+}
+header .header-container nav a {
+  text-decoration: none;
+  color: #555555;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+header .header-container nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #1a1a1a;
+  transition: width 0.3s ease;
+}
+header .header-container nav a:hover {
+  color: #1a1a1a;
+}
+header .header-container nav a:hover::after {
+  width: 100%;
+}
+header .header-container nav a:last-child {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+header .header-container nav a:last-child::after {
+  display: none;
+}
+header .header-container nav a:last-child:hover {
+  background-color: #333333;
+}
+
+.hero {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background-color: #f5f5f5;
+  gap: 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.hero .hero-content {
+  flex: 1;
+  text-align: left;
+}
+.hero .hero-content h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  color: #1a1a1a;
+  font-family: "Poppins", sans-serif;
+}
+.hero .hero-content .hero-subtitle {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #555555;
+  font-weight: 400;
+}
+.hero .hero-content .hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  align-items: center;
+}
+.hero .hero-content .hero-buttons button {
+  padding: 12px 28px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+.hero .hero-content .hero-buttons .btn-primary {
+  background-color: #1a1a1a;
+  color: white;
+}
+.hero .hero-content .hero-buttons .btn-primary:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+}
+.hero .hero-content .hero-buttons .btn-secondary {
+  background-color: transparent;
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
+}
+.hero .hero-content .hero-buttons .btn-secondary:hover {
+  background-color: #1a1a1a;
+  color: white;
+  transform: translateY(-2px);
+}
+.hero .hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.hero .hero-image img {
+  width: 100%;
+  max-width: 450px;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+.hero .hero-image img:hover {
+  transform: scale(1.03);
+}
+
+.featured-games {
+  padding: 80px 60px;
+  background-color: white;
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.featured-games h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+.featured-games .section-subtitle {
+  font-size: 16px;
+  color: #777777;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.featured-games .games-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.featured-games .game-card {
+  flex: 0 1 280px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.featured-games .game-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+.featured-games .game-card .game-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.featured-games .game-card .game-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.featured-games .game-card:hover .game-image img {
+  transform: scale(1.05);
+}
+.featured-games .game-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  padding: 20px 20px 10px;
+  margin: 0;
+}
+.featured-games .game-card p {
+  font-size: 14px;
+  color: #666666;
+  padding: 0 20px 15px;
+  margin: 0;
+  line-height: 1.6;
+}
+.featured-games .game-card .btn-play {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0 20px 20px 20px;
+  width: calc(100% - 40px);
+  transition: all 0.3s ease;
+}
+.featured-games .game-card .btn-play:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+}
+
+.team {
+  padding: 80px 60px;
+  background-color: #f5f5f5;
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.team h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+.team .section-subtitle {
+  font-size: 16px;
+  color: #777777;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team .team-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.team .team-member {
+  flex: 0 1 200px;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+.team .team-member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+.team .team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team .team-member h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 15px 0 5px 0;
+}
+.team .team-member .role {
+  font-size: 12px;
+  color: #999999;
+  margin: 5px 0 10px 0;
+  font-weight: 500;
+}
+.team .team-member .bio {
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+}
+.team .company-info {
+  background-color: white;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.team .company-info .company-logo {
+  flex: 0 0 150px;
+  text-align: center;
+}
+.team .company-info .company-logo img {
+  max-width: 100px;
+  height: auto;
+}
+.team .company-info .company-description {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #555555;
+  text-align: left;
+  margin: 0;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 60px;
+}
+footer .footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+footer .footer-column h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+footer .footer-column p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #cccccc;
+  margin: 0;
+}
+footer .footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .footer-column ul li {
+  margin-bottom: 10px;
+}
+footer .footer-column ul li a {
+  font-size: 13px;
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer .footer-column ul li a:hover {
+  color: #ffffff;
+}
+footer .footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 40px;
+  border-top: 1px solid #333333;
+  text-align: center;
+  font-size: 12px;
+  color: #999999;
+}
+footer .footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 20px;
+    gap: 40px;
+  }
+  .hero .hero-content {
+    text-align: center;
+  }
+  .hero .hero-content h2 {
+    font-size: 28px;
+  }
+  .hero .hero-content .hero-subtitle {
+    font-size: 16px;
+  }
+  .hero .hero-content .hero-buttons {
+    flex-direction: column;
+  }
+  .hero .hero-image {
+    order: -1;
+  }
+}
+@media (max-width: 1024px) {
+  .hero {
+    padding: 0 40px;
+    gap: 40px;
+  }
+  .hero .hero-content h2 {
+    font-size: 36px;
+  }
+}
+.hero h1 {
+  font-size: 48px;
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  background-color: white;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

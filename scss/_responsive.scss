@@ -1,0 +1,47 @@
+.hero {
+  @include responsive($mobile) {
+    flex-direction: column;
+    height: auto;
+    padding: 50px $spacing;
+    gap: 40px;
+
+    .hero-content {
+      text-align: center;
+
+      h2 {
+        font-size: 28px;
+      }
+
+      .hero-subtitle {
+        font-size: 16px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+    }
+
+    .hero-image {
+      order: -1;
+    }
+  }
+
+  @include responsive($tablet) {
+    padding: 0 40px;
+    gap: 40px;
+
+    .hero-content {
+      h2 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 48px;
+
+    @include responsive($mobile) {
+      font-size: 28px;
+    }
+  }
+}
