@@ -16,6 +16,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
 
     img {
       height: 40px;
@@ -30,6 +33,42 @@ header {
       margin: 0;
       flex: 1;
       text-transform: uppercase;
+    }
+
+    // Burger Menu Button
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        width: 25px;
+        height: 3px;
+        background-color: #1a1a1a;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        display: block;
+      }
+
+      &.active {
+        span:nth-child(1) {
+          transform: rotate(45deg) translateY(11px);
+        }
+
+        span:nth-child(2) {
+          opacity: 0;
+        }
+
+        span:nth-child(3) {
+          transform: rotate(-45deg) translateY(-11px);
+        }
+      }
     }
 
     nav {
