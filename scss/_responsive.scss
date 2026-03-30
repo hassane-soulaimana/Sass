@@ -331,9 +331,49 @@ footer {
     .footer-bottom {
       padding-top: 20px;
       font-size: 10px;
+      flex-direction: column;
+      gap: 15px;
 
       p {
         margin: 0;
+      }
+
+      .footer-links {
+        flex-direction: column;
+        gap: 10px;
+
+        a {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .stay-updated {
+      padding: 30px 15px;
+
+      h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 12px;
+        margin-bottom: 15px;
+      }
+
+      .newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+
+        input {
+          padding: 10px 12px;
+          font-size: 12px;
+        }
+
+        .btn-subscribe {
+          padding: 10px 20px;
+          font-size: 12px;
+        }
       }
     }
   }
@@ -360,6 +400,22 @@ footer {
         a {
           font-size: 12px;
         }
+      }
+    }
+
+    .stay-updated {
+      padding: 35px 30px;
+
+      h3 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      .newsletter-form {
+        max-width: 400px;
       }
     }
   }
