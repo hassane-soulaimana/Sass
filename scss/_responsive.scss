@@ -1,4 +1,4 @@
-// Responsive Header
+// En-tête Responsif
 header {
   @include responsive($mobile) {
     padding: 12px 0;
@@ -21,7 +21,7 @@ header {
         flex: 1;
       }
 
-      // Afficher le burger menu
+      // Afficher le menu burger
       .menu-toggle {
         display: flex;
         order: 3;
@@ -103,7 +103,7 @@ header {
   }
 }
 
-// HERO
+// SECTION HÉRO
 .hero {
   @include responsive($mobile) {
     height: auto;
@@ -150,7 +150,7 @@ header {
   }
 }
 
-// Games
+// Jeux
 .featured-games {
   @include responsive($mobile) {
     padding: 50px 20px;
@@ -196,7 +196,7 @@ header {
   }
 }
 
-// Team
+// Équipe
 .team {
   @include responsive($mobile) {
     padding: 50px 20px;
@@ -289,7 +289,7 @@ header {
   }
 }
 
-//Footer
+// Pied de page
 footer {
   @include responsive($mobile) {
     padding: 30px 15px;

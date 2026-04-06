@@ -26,7 +26,7 @@
       </div>
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- SECTION HÉRO -->
     <section class="hero" id="home">
       <div class="hero-content">
         <h2>Crafting Epic<br />Gaming Experiences</h2>
@@ -93,7 +93,7 @@
       </div>
     </section>
 
-    <!-- TEAMS-->
+    <!-- ÉQUIPES -->
     <section class="team" id="teams">
       <h2>Meet Our Teams</h2>
       <p class="section-subtitle">
@@ -169,7 +169,7 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- PIED DE PAGE -->
     <footer>
       <div class="footer-content">
         <div class="footer-column">
@@ -230,18 +230,18 @@
     </footer>
 
     <script>
-      // Menu burger toggle
+      // Basculer le menu burger
       const menuToggle = document.getElementById("menuToggle");
       const navMenu = document.getElementById("navMenu");
       const navLinks = navMenu.querySelectorAll("a");
 
-      // Toggle menu when burger button is clicked
+      // Basculer le menu quand on clique sur le bouton burger
       menuToggle.addEventListener("click", () => {
         menuToggle.classList.toggle("active");
         navMenu.classList.toggle("active");
       });
 
-      // Close menu when a link is clicked
+      // Fermer le menu quand on clique sur un lien
       navLinks.forEach((link) => {
         link.addEventListener("click", () => {
           menuToggle.classList.remove("active");
@@ -249,7 +249,7 @@
         });
       });
 
-      // Close menu when clicking outside
+      // Fermer le menu quand on clique à l'extérieur
       document.addEventListener("click", (e) => {
         if (!e.target.closest("header")) {
           menuToggle.classList.remove("active");
